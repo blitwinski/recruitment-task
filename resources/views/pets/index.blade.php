@@ -20,9 +20,9 @@
                         <td>{{ $pet['id'] ?? ''}}</td>
                         <td>{{ $pet['name'] ?? ''}}</td>
                         <td>{{ $pet['status'] ?? ''}}</td>
-                        <td>
+                        <td><p style="width: 50%">
                             <a href="{{ $pet['photoUrls'][0] ?? ''}}" target="_blank">
-                            {{ $pet['photoUrls'][0] ?? ''}}</a></td>
+                            {{ $pet['photoUrls'][0] ?? ''}}</a></p></td>
                         <td>
                             <div class="d-flex">
                                 <a href="{{ route('pets.edit', $pet['id'] ?? '') }}" class="btn btn-sm btn-primary me-2">
